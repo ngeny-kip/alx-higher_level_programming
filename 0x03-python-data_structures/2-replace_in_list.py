@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 def replace_in_list(my_list, idx, element):
-    '''prints all integer of a list in reverse order'''
-    if isinstance(my_list, list):
-        my_list.reverse()
-        for i in my_list:
-            print("{:d}".format(i))
+    '''replace an element of a list at a specific posistion'''
+    if idx >= 0 and idx < len(my_list):
+        my_list[idx] = element
+    return (my_list)
